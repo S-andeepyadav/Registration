@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RegistrationForm</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1 style="text-align: center">Registration Form</h1>
+    <form action="/thank.html" style="border: solid 5px rgb(120, 152, 150)">
+      <h2 style="text-align: center">Persoal Details</h2>
+      <hr />
+      <div class="pd">
+        <label id="first">First Name: <sup>*</sup></label>
+        <input type="text" placeholder="Enter Name" required />
+
+        <br >
+        <br >
+        <label id="middle"> Middle Name:</label>
+
+        <input type="text" placeholder="Enter Middle Name" />
+        <br ><br >
+        <label id="last">Last Name: </label>
+        <input type="text" placeholder="Last Name" />
+        <br >
+
+        <p>
+          Date of Birth:<sup>*</sup>
+          <input id="date" type="date" name="day" required />
+        </p>
+        <label id="gender">Gender:<sup>*</sup></label>
+        <input id="male" type="radio" name="radio"  required> Male
+        <input id="femal" type="radio" name="radio" required> Female
+        <input id="transgender" type="radio" name="radio" required>Transgender
+        
+        <br>
+        <div class="emailid">
+        <p>
+
+          Email Id:<sup >*</sup>
+          <input id="email" type="email" placeholder="email id" required />
+        </p>
+        </div>
+<br>
+        <label id=""> Father Name: <sup>*</sup></label> &nbsp;
+        <input id="father" type="text" placeholder="Enter Father Name" required />
+        <br><br >
+        <label  id="">Mother Name:<sup >*</sup></label>
+        <input id="mother" type="text" required placeholder="Mother Name" >
+      </div>
+
+      <h2 style="text-align: center">Present Address</h2>
+      <hr />
+      <br />
+      <div class="pa">
+        <label> Premises No./Name: </label>
+        <input id="premises" type="text" required />
+
+        <div class="sublocal">
+          <br />
+          <label> Sub -Local(Optional):</label>&nbsp;
+          <input type="text" id="sub" >
+        </div>
+        <div class="locality">
+          <br />
+          <label for=""> locality:</label>
+          <input type="text" id="locality">
+        </div>
+        <div class="country">
+        
+          Country:<sup >*</sup>
+          
+          <select name="select " id="select " required>
+            <option>Select</option>
+
+            <option value="">India</option>
+            <option value="">Pakistan</option>
+            <option value="">Sri Lakha</option>
+            <option value="">South Africa</option>
+            <option value="">England</option>
+            <option value="">Australia</option>
+            <option value="">Afghnistan</option>
+            <option value="">China</option>
+            <option value="">Bhutan</option>
+            <option value="">Nepal</option>
+            <option value="">Bangladesh</option>
+            <option value="">America</option>
+            <option value="">Dubai</option>
+            <option value="">Russian</option>
+            <option value="">Canada</option>
+            <option value="">France</option>
+            <option value="">Germany</option>
+            <option value="">Brazil</option>
+            <option value="">Austria</option>
+            <option value="">Maldives</option>
+            <option value="">Myanmar</option>
+            <option value="">Other</option>
+          </select>
+        </div>
+          <div class="state"> 
+          State:<sup >*</sup>
+          <select name="" id="state">
+            <option>Select</option>
+            <option>Uttar Pradesh</option>
+            <option>Delhi</option>
+            <option>Bihar</option>
+            <option>West Bengal</option>
+            <option>Madhya Pradesh</option>
+            <option>Himachal Pradesh</option>
+            <option>Tamil Nadu</option>
+            <option>Maharashtra</option>
+            <option>Goa</option>
+            <option>Andhra Pradesh</option>
+            <option>Assam</option>
+            <option>Chattisgarh</option>
+            <option>Gujarat</option>
+            <option>Haryana</option>
+            <option>Jharkhand</option>
+            <option>Kerala</option>
+            <option>Manipur</option>
+            <option>Punjab</option>
+            <option>UttarKhand</option>
+            <option>Rajasthan</option>
+          </select>
+        </div>
+        <div class="district">
+          District:<sup >*</sup>
+    
+          <select name="" id="district">
+            <option>Select</option>
+            <option>Prayagraj (Allahabad)</option>
+            <option>Jaunpur</option>
+            <option>Azamgarh</option>
+            <option>Bhadohi</option>
+            <option>Varanshi</option>
+            <option>Pratapgarh</option>
+            <option>Kaushambi</option>
+            <option>Deoria</option>
+            <option>Gorkhapur</option>
+            <option>Agra</option>
+            <option>Aligarh</option>
+            <option>Ambedkar</option>
+            <option>Ballia</option>
+            <option>Balrampur</option>
+            <option>Barabanki</option>
+            <option>Bareilly</option>
+            <option>Basti</option>
+            <option>Etah</option>
+            <option>Etawah</option>
+            <option>Ghazipur</option>
+          </select>
+        </div>
+
+        <div class="pincode">
+          Pin Code:<sup >*</sup>
+            
+          <input type="text" id="pincode" required>
+        </div>
+      </div>
+
+      <h2 style="text-align: center">Choose Password</h2>
+      <hr />
+      <div class="password">
+        <label  id="password">Password: <sup>*</sup> </label>
+       
+        <input type="text" />
+        <br />
+        <br />
+        <label for="">Conform Password  <sup>*</sup> :</label>&nbsp;&nbsp;&nbsp;
+        <input type="text" />
+        <br />
+        <br />
+        <div class="sq">
+          <label  >Security Question <sup>*</sup></label
+          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <select>
+            <option>Select</option>
+            <option>Which is the website you rarely visit ?</option>
+            <option value="">What is the name of your First school ?</option>
+            <option value="">Which is your favorite book</option></select
+          ><br />
+          <br />
+          <label for=""> Security Answer:  <sup>*</sup></label>
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <input type="text" />
+        </div>
+        <br />
+        <button >Submit  </button>
+      </div>
+    </form>
+    
+  </body>
+</html>
